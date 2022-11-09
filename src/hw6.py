@@ -10,7 +10,7 @@ def split_number(number):
 
 def is_palindrome(num):
     number = str(num)
-    if (number == number[::-1]):  # redo
+    if (number == number[::-1]): #javier class helped bigtime with this along wiht section 5.5
         return True
     else:
         return False
@@ -20,9 +20,9 @@ def is_palindrome(num):
 
 def compute_variance(*args):
     # /(n-1)
-    list = [item for item in args]
+    list = [item for item in args] #found shortcut in book chapt 5
     length = len(list)
-    mean = (sum(list)) / length
+    mean = (sum(list)) / length #find mean to divide by
     sv = 0
     for i in range(length):
         sv = sv + (((list[i] - mean) ** 2) / (length - 1))
@@ -37,7 +37,7 @@ def compute_variance_req(*args):
     if len(args) < 2:
         return ("at least 2 arguments")
     else:
-        length = len(list2)
+        length = len(list2)#copy of func above
         mean = (sum(list2)) / length
         sv = 0
         for i in range(length):
